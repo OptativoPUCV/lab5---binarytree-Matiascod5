@@ -88,9 +88,9 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
       current = current->right;
     }
 
+  }
     tree->current = NULL;
     return NULL;
-  }
 }
 
 Pair * upperBound(TreeMap * tree, void* key) {
