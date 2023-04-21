@@ -1061,3 +1061,41 @@ treemap.c:79:19: error: incompatible types when assigning to type ‘TreeNode *�
       |                   ^~~~
 Compilation failed
 bc112cc
+Fri 21 Apr 2023 11:37:06 PM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:51:19: error: invalid initializer
+   51 |   TreeNode node = createTreeNode(key,value);
+      |                   ^~~~~~~~~~~~~~
+treemap.c:52:18: error: invalid initializer
+   52 |   TreeNode aux = tree->current;
+      |                  ^~~~
+treemap.c:61:11: error: incompatible types when assigning to type ‘TreeNode’ from type ‘TreeNode *’
+   61 |     aux = tree->current;
+      |           ^~~~
+treemap.c:63:44: error: ‘TreeNode’ has no member named ‘pairr’; did you mean ‘pair’?
+   63 |     if(tree->lower_than(key,tree->current->pairr->key) == 1){
+      |                                            ^~~~~
+      |                                            pair
+treemap.c:71:26: error: invalid type argument of ‘->’ (have ‘TreeNode’)
+   71 |   if(tree->lower_than(aux->pair->key,key) == 0){
+      |                          ^~
+treemap.c:72:8: error: invalid type argument of ‘->’ (have ‘TreeNode’)
+   72 |     aux->left = node;
+      |        ^~
+treemap.c:73:9: error: invalid type argument of ‘->’ (have ‘TreeNode’)
+   73 |     node->parent = aux;
+      |         ^~
+treemap.c:76:8: error: invalid type argument of ‘->’ (have ‘TreeNode’)
+   76 |     aux->right = node;
+      |        ^~
+treemap.c:77:9: error: invalid type argument of ‘->’ (have ‘TreeNode’)
+   77 |     node->parent = aux;
+      |         ^~
+treemap.c:79:19: error: incompatible types when assigning to type ‘TreeNode *’ from type ‘TreeNode’
+   79 |   tree->current = node;
+      |                   ^~~~
+Compilation failed
+a69697b
