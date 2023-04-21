@@ -83,10 +83,12 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
     if ( current->pair->key == key){
        tree->current = current;
       return current->pair->value;
+      printf("hola2\n");
+      
     }
     
     if ( current->pair->key > key){
-
+      printf("hola3\n");
       if ( current->right == NULL) break;
       current = current->right;
     }
