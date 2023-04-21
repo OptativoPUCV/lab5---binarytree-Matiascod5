@@ -691,3 +691,9 @@ treemap.c:77:16: error: ‘TreeNode’ has no member named ‘lower_than’
       |                ^~
 Compilation failed
 a1354f8
+Fri 21 Apr 2023 04:01:58 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  4|7
+total_score: 5/70
+e8a8f49
