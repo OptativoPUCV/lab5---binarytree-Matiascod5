@@ -53,7 +53,7 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
   int resultado;
   
   while ( tree->current != NULL){
-    resultado = is_equal(tree,key,tree->current->pair->key);
+    resultado = is_equal(tree,tree->current->pair->key,key);
     if( resultado == 1){
       return;
     } 
