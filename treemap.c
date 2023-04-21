@@ -60,10 +60,10 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
     aux = tree->current;
     
     if(tree->lower_than(key,tree->current->pair->key) == 0){
-      tree->current =  tree->current->left;
+      tree->current =  tree->current->right;
       }
     else{
-      tree->current = tree->current->right;
+      tree->current = tree->current->left;
     }
   }
   
