@@ -670,3 +670,14 @@ treemap.c:77:16: error: ‘TreeNode’ has no member named ‘key’
       |                ^~
 Compilation failed
 690b0e7
+Fri 21 Apr 2023 04:01:07 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:77:23: error: comparison between pointer and integer [-Werror]
+   77 |     if( current->pair == 1){
+      |                       ^~
+cc1: all warnings being treated as errors
+Compilation failed
+97bd96c
