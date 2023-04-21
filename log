@@ -296,3 +296,23 @@ treemap.c:81:21: error: ‘TreeMap’ has no member named ‘left’
 cc1: all warnings being treated as errors
 Compilation failed
 a9c7a5b
+Fri 21 Apr 2023 03:36:55 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:76:15: error: ‘TreeMap’ has no member named ‘pair’
+   76 |     if ( (tree->pair) > key){
+      |               ^~
+treemap.c:77:21: error: ‘TreeMap’ has no member named ‘right’
+   77 |       current = tree->right;
+      |                     ^~
+treemap.c:80:23: error: comparison of distinct pointer types lacks a cast [-Werror]
+   80 |     if( current->pair < key){
+      |                       ^
+treemap.c:81:21: error: ‘TreeMap’ has no member named ‘left’
+   81 |       current = tree->left;
+      |                     ^~
+cc1: all warnings being treated as errors
+Compilation failed
+9b87034
