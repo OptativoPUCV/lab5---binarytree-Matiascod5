@@ -77,6 +77,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
     if( current->pair->key < key){
       if( current->left == NULL) break;
       current = current->left;
+      printf("hola\n");
     }
 
     if ( current->pair->key == key){
