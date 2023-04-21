@@ -393,3 +393,20 @@ treemap.c:81:21: error: ‘TreeMap’ has no member named ‘left’
 cc1: all warnings being treated as errors
 Compilation failed
 cc021e0
+Fri 21 Apr 2023 03:38:55 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:77:21: error: ‘TreeMap’ has no member named ‘right’
+   77 |       current = tree->right;
+      |                     ^~
+treemap.c:80:51: error: comparison between pointer and integer [-Werror]
+   80 |     if( tree->lower_than(current->pair->key, key) < key){
+      |                                                   ^
+treemap.c:81:21: error: ‘TreeMap’ has no member named ‘left’
+   81 |       current = tree->left;
+      |                     ^~
+cc1: all warnings being treated as errors
+Compilation failed
+4b3009d
