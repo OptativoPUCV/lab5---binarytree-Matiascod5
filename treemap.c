@@ -79,7 +79,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
       current = current->left;
     }
 
-    if ( current->pair == key){
+    if ( current->pair->key == key){
        tree->current = current;
       return current->pair;
     }
@@ -91,8 +91,8 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
     }
 
   }
-    tree->current = NULL;
-    return NULL;
+  tree->current = NULL;
+  return NULL;
 }
 
 Pair * upperBound(TreeMap * tree, void* key) {
