@@ -109,3 +109,23 @@ treemap.c:84:17: error: ‘TreeNode’ has no member named ‘key’
       |                 ^~
 Compilation failed
 2d37d41
+Fri 21 Apr 2023 01:49:26 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:75:17: error: ‘TreeMap’ has no member named ‘curent’; did you mean ‘current’?
+   75 |   while ( tree->curent != NULL){
+      |                 ^~~~~~
+      |                 current
+treemap.c:76:17: error: ‘TreeNode’ has no member named ‘key’
+   76 |     if ( current->key > key){
+      |                 ^~
+treemap.c:80:16: error: ‘TreeNode’ has no member named ‘key’
+   80 |     if( current->key < key){
+      |                ^~
+treemap.c:84:17: error: ‘TreeNode’ has no member named ‘key’
+   84 |     if ( current->key == key){
+      |                 ^~
+Compilation failed
+3ada2b6
