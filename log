@@ -8,3 +8,13 @@ Fri 21 Apr 2023 01:09:39 AM UTC:
  tests:  4|7
 total_score: 5/70
 b7143f1
+Fri 21 Apr 2023 01:38:25 AM UTC: 
+ treemap.c | 17 ++++++++++++++++-
+ 1 file changed, 16 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:85:6: error: expected expression before ‘if’
+   85 |     *if (tree->lower_than(current->pair->key,key) < 1){
+      |      ^~
+Compilation failed
+2b045d9
