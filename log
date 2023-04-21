@@ -792,3 +792,37 @@ Fri 21 Apr 2023 10:56:50 PM UTC:
  tests:  11|6
 total_score: 15/70
 3aa411d
+Fri 21 Apr 2023 11:23:39 PM UTC: 
+ treemap.c | 29 +++++++++++++++++++++++++++++
+ 1 file changed, 29 insertions(+)
+In file included from test.c:4:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:51:18: error: invalid initializer
+   51 |   TreeNode aux = tree->current;
+      |                  ^~~~
+treemap.c:52:19: error: invalid initializer
+   52 |   TreeNode node = createTreeNode(key,value);
+      |                   ^~~~~~~~~~~~~~
+treemap.c:60:11: error: incompatible types when assigning to type ‘TreeNode’ from type ‘TreeNode *’
+   60 |     aux = tree->current;
+      |           ^~~~
+treemap.c:71:8: error: invalid type argument of ‘->’ (have ‘TreeNode’)
+   71 |     aux->left = node
+      |        ^~
+treemap.c:71:21: error: expected ‘;’ before ‘node’
+   71 |     aux->left = node
+      |                     ^
+      |                     ;
+   72 |     node->parent = aux;
+      |     ~~~~             
+treemap.c:75:8: error: invalid type argument of ‘->’ (have ‘TreeNode’)
+   75 |     aux->right = node;
+      |        ^~
+treemap.c:76:9: error: invalid type argument of ‘->’ (have ‘TreeNode’)
+   76 |     node->parent = aux;
+      |         ^~
+treemap.c:78:19: error: incompatible types when assigning to type ‘TreeNode *’ from type ‘TreeNode’
+   78 |   tree->current = node;
+      |                   ^~~~
+Compilation failed
+673ac82
