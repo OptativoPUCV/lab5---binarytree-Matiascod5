@@ -1527,3 +1527,19 @@ Sat 22 Apr 2023 11:29:29 PM UTC:
  tests:  26|1
 total_score: 55/70
 e320688
+Sat 22 Apr 2023 11:50:09 PM UTC: 
+ treemap.c | 17 +++++++++++++++++
+ 1 file changed, 17 insertions(+)
+In file included from test.c:4:
+treemap.c: In function ‘removeNode’:
+treemap.c:94:18: error: statement with no effect [-Werror=unused-value]
+   94 |     node->parent == NULL;
+      |                  ^
+treemap.c:99:26: error: ‘pair’ undeclared (first use in this function); did you mean ‘Pair’?
+   99 |     node->pair = auxNode-pair;
+      |                          ^~~~
+      |                          Pair
+treemap.c:99:26: note: each undeclared identifier is reported only once for each function it appears in
+cc1: all warnings being treated as errors
+Compilation failed
+0c6e016
