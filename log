@@ -1197,3 +1197,19 @@ treemap.c:137:1: error: control reaches end of non-void function [-Werror=return
 cc1: all warnings being treated as errors
 Compilation failed
 6c15f20
+Sat 22 Apr 2023 10:50:13 PM UTC: 
+ treemap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘firstTreeMap’:
+treemap.c:133:30: error: passing argument 1 of ‘minimum’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+  133 |   TreeNode *minimo = minimum(tree);
+      |                              ^~~~
+      |                              |
+      |                              TreeMap *
+treemap.c:83:31: note: expected ‘TreeNode *’ but argument is of type ‘TreeMap *’
+   83 | TreeNode * minimum(TreeNode * x){
+      |                    ~~~~~~~~~~~^
+cc1: all warnings being treated as errors
+Compilation failed
+d0951b1
