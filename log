@@ -1521,3 +1521,9 @@ treemap.c:130:14: error: comparison between pointer and integer [-Werror]
 cc1: all warnings being treated as errors
 Compilation failed
 af4e271
+Sat 22 Apr 2023 11:29:29 PM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  26|1
+total_score: 55/70
+e320688
