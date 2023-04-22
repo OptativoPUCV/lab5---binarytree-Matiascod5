@@ -127,11 +127,28 @@ Pair * upperBound(TreeMap * tree, void* key) {
 
 Pair * firstTreeMap(TreeMap * tree) {
   TreeNode *minimo = minimum(tree->root);
-  
-  
   return minimo->pair;
 }
 
 Pair * nextTreeMap(TreeMap * tree) {
-    return NULL;
+  TreeNode aux = tree->current->parent
+  if ( tree->current == NULL){
+    tree->current = minimum(tree->root);
+    return tree->current->pair;
+  }
+
+  if ( tree->curent->right != NULL){
+    tree->current = minimum(tree->root);
+    return tree->current->pair;
+  }
+
+  while ( aux != NULL && tree->current == aux->right){
+    tree->current = aux;
+    aux = tree->current->parent;
+  }
+  tree->current = aux;
+  if ( tree->current != NULL){
+    return tree->current->pair;
+  }
+  return NULL;
 }

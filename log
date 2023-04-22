@@ -1305,3 +1305,35 @@ Sat 22 Apr 2023 10:54:16 PM UTC:
  tests:  17|3
 total_score: 30/70
 ef6f275
+Sat 22 Apr 2023 11:06:10 PM UTC: 
+ treemap.c | 19 +++++++++++++++++++
+ 1 file changed, 19 insertions(+)
+In file included from test.c:4:
+treemap.c: In function ‘nextTreeMap’:
+treemap.c:134:18: error: invalid initializer
+  134 |   TreeNode aux = tree->current->parent
+      |                  ^~~~
+treemap.c:135:3: error: expected ‘,’ or ‘;’ before ‘if’
+  135 |   if ( tree->current == NULL){
+      |   ^~
+treemap.c:140:14: error: ‘TreeMap’ has no member named ‘curent’; did you mean ‘current’?
+  140 |   if ( tree->curent->right != NULL){
+      |              ^~~~~~
+      |              current
+treemap.c:145:15: error: invalid operands to binary != (have ‘TreeNode’ and ‘void *’)
+  145 |   while ( aux != NULL && tree->current == aux->right){
+      |               ^~
+treemap.c:145:46: error: invalid type argument of ‘->’ (have ‘TreeNode’)
+  145 |   while ( aux != NULL && tree->current == aux->right){
+      |                                              ^~
+treemap.c:146:21: error: incompatible types when assigning to type ‘TreeNode *’ from type ‘TreeNode’
+  146 |     tree->current = aux;
+      |                     ^~~
+treemap.c:147:11: error: incompatible types when assigning to type ‘TreeNode’ from type ‘TreeNode *’
+  147 |     aux = tree->current->parent;
+      |           ^~~~
+treemap.c:149:19: error: incompatible types when assigning to type ‘TreeNode *’ from type ‘TreeNode’
+  149 |   tree->current = aux;
+      |                   ^~~
+Compilation failed
+cf0b253
