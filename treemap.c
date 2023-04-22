@@ -133,7 +133,7 @@ Pair * firstTreeMap(TreeMap * tree) {
   TreeNode *minimo = minimum(tree->root);
   
   
-  return minimo;
+  return *minimo;
 }
 
 Pair * nextTreeMap(TreeMap * tree) {
