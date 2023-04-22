@@ -130,7 +130,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
-  tree->curent = tree->root
+  tree->curent = tree->root;
   TreeNode *minimo = minimum(tree->current);
   
   
