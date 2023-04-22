@@ -125,7 +125,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
   TreeNode *ub_node = NULL;
   TreeNode *auxNode = tree->root;
   
-  aux = is_iqual(tree,auxNode->current->pair->key,key);
+  int aux = is_iqual(tree,auxNode->current->pair->key,key);
   
   while( aux != NULL){
     if ( aux == 1){
