@@ -1396,3 +1396,25 @@ Sat 22 Apr 2023 11:09:01 PM UTC:
  tests:  22|2
 total_score: 45/70
 04209d3
+Sat 22 Apr 2023 11:27:01 PM UTC: 
+ treemap.c | 27 ++++++++++++++++++++++-----
+ 1 file changed, 22 insertions(+), 5 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:128:3: error: ‘aux’ undeclared (first use in this function)
+  128 |   aux = is_iqual(tree,auxNode->current->pair->key,key);
+      |   ^~~
+treemap.c:128:3: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c:128:9: error: implicit declaration of function ‘is_iqual’; did you mean ‘is_equal’? [-Werror=implicit-function-declaration]
+  128 |   aux = is_iqual(tree,auxNode->current->pair->key,key);
+      |         ^~~~~~~~
+      |         is_equal
+treemap.c:128:30: error: ‘TreeNode’ has no member named ‘current’
+  128 |   aux = is_iqual(tree,auxNode->current->pair->key,key);
+      |                              ^~
+treemap.c:137:31: error: expected expression before ‘;’ token
+  137 |       auxNode = auxNode->left,;
+      |                               ^
+cc1: all warnings being treated as errors
+Compilation failed
+7d6259a
