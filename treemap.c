@@ -89,6 +89,11 @@ TreeNode * minimum(TreeNode * x){
 
 
 void removeNode(TreeMap * tree, TreeNode* node) {
+  tree->current = tree->root;
+  
+  while( tree->current != NULL){
+    
+  }
 
 }
 
@@ -125,7 +130,10 @@ Pair * upperBound(TreeMap * tree, void* key) {
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
-    return NULL;
+  TreeNode *minimo = minimun(tree->root);
+  
+  
+  return minimo;
 }
 
 Pair * nextTreeMap(TreeMap * tree) {
