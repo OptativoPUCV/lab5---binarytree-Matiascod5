@@ -1418,3 +1418,22 @@ treemap.c:137:31: error: expected expression before ‘;’ token
 cc1: all warnings being treated as errors
 Compilation failed
 7d6259a
+Sat 22 Apr 2023 11:27:09 PM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:128:3: error: ‘aux’ undeclared (first use in this function)
+  128 |   aux = is_iqual(tree,auxNode->current->pair->key,key);
+      |   ^~~
+treemap.c:128:3: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c:128:9: error: implicit declaration of function ‘is_iqual’; did you mean ‘is_equal’? [-Werror=implicit-function-declaration]
+  128 |   aux = is_iqual(tree,auxNode->current->pair->key,key);
+      |         ^~~~~~~~
+      |         is_equal
+treemap.c:128:30: error: ‘TreeNode’ has no member named ‘current’
+  128 |   aux = is_iqual(tree,auxNode->current->pair->key,key);
+      |                              ^~
+cc1: all warnings being treated as errors
+Compilation failed
+335a5e8
