@@ -144,7 +144,7 @@ Pair * nextTreeMap(TreeMap * tree) {
 
   if ( tree->current->left != NULL){
     tree->current = minimum(tree->current->left);
-    return tree->curent->pair;
+    return tree->current->pair;
   }
 
   while ( aux != NULL && tree->current == aux->right){
