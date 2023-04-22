@@ -1351,3 +1351,13 @@ treemap.c:140:14: error: ‘TreeMap’ has no member named ‘curent’; did you
       |              current
 Compilation failed
 9358512
+Sat 22 Apr 2023 11:06:44 PM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘nextTreeMap’:
+treemap.c:135:3: error: expected ‘,’ or ‘;’ before ‘if’
+  135 |   if ( tree->current == NULL){
+      |   ^~
+Compilation failed
+662a6f4
