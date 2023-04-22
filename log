@@ -1228,3 +1228,29 @@ treemap.c:83:31: note: expected ‘TreeNode *’ but argument is of type ‘Tree
       |                    ~~~~~~~~~~~^
 Compilation failed
 301b55c
+Sat 22 Apr 2023 10:50:41 PM UTC: 
+ treemap.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘firstTreeMap’:
+treemap.c:133:9: error: ‘TreeMap’ has no member named ‘curent’; did you mean ‘current’?
+  133 |   tree->curent = tree->root
+      |         ^~~~~~
+      |         current
+treemap.c:133:28: error: expected ‘;’ before ‘TreeNode’
+  133 |   tree->curent = tree->root
+      |                            ^
+      |                            ;
+  134 |   TreeNode *minimo = minimum(tree->current);
+      |   ~~~~~~~~                  
+treemap.c:137:10: error: ‘minimo’ undeclared (first use in this function); did you mean ‘minimum’?
+  137 |   return minimo->pair;
+      |          ^~~~~~
+      |          minimum
+treemap.c:137:10: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c:138:1: error: control reaches end of non-void function [-Werror=return-type]
+  138 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+d821eac
