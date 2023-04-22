@@ -1543,3 +1543,15 @@ treemap.c:99:26: note: each undeclared identifier is reported only once for each
 cc1: all warnings being treated as errors
 Compilation failed
 0c6e016
+Sat 22 Apr 2023 11:50:20 PM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘removeNode’:
+treemap.c:99:26: error: ‘pair’ undeclared (first use in this function); did you mean ‘Pair’?
+   99 |     node->pair = auxNode-pair;
+      |                          ^~~~
+      |                          Pair
+treemap.c:99:26: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+64f3adf
